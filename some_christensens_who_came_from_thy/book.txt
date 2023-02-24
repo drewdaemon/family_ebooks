@@ -226,89 +226,89 @@ November 1969
 ((page ix))
 PART ONE - Denmark...Now and Long Ago
 
-1. There is a Lovely Land
+1. [There is a Lovely Land](#there-is-a-lovely-land)
 
-2. Whence Came this Land and Its People
+2. [Whence Came this Land and Its People](#whence-came-this-land-and-its-people)
 
-3. Vikings Were They
+3. [Vikings Were They](#vikings-were-they)
 
-4. Peasants - Nobles - Kings
+4. [Peasants - Nobles - Kings](#peasants-nobles-kings)
 
-5. The Way of War
+5. [The Way of War](#the-way-of-war)
 
-6. Other Dimensions
+6. [Other Dimensions](#other-dimensions)
 
-7. Emigration - A Magic word
+7. [Emigration - A Magic word](#emigration-can-be-a-magic-word)
 
 PART TWO - Jutland... Not so Long Ago
 
-1. Kjallerup 1847 - 1852
+1. [Kjallerup 1847 - 1852](#kjallerup-1847-1852)
 
-2. Norhaa 1852 - 1862
+2. [Norhaa 1852 - 1862](#norhaa-1852-1862)
 
-3. Bested 1862 - 1865
+3. [Bested 1862 - 1865](#bested-1862-1865)
 
-4. Kobberod 1865 - 1866
+4. [Kobberod 1865 - 1866](#kobberod-1865-1866)
 
-5. Aalborg April - May 1866
+5. [Aalborg April - May 1866](#aalborg-april-may-1866)
 
 PART THREE - Their Promised Land
 
-1. Wearying Miles Westward
+1. [Wearying Miles Westward](#wearying-miles-westward)
 
-2. Tragedy On the Plains
+2. [Tragedy On the Plains](#tragedy-on-the-plains)
 
-3. War Whoops and Drums
+3. [War Whoops and Drums](#war-whoops-and-drums)
 
-4. Sinking Roots in Gunnison Valley
+4. [Sinking Roots in Gunnison Valley](#sinking-roots-in-gunnison-valley)
 
-5. The United Order Experiment
+5. [The United Order Experiment](#the-united-order-experiment)
 
-6. The Brown Kit
+6. [The Brown Kit](#the-brown-kit)
 
 PART FOUR - In the Shade of a Temple
 
-1. A Clear Call
+1. [A Clear Call](#a-clear-call)
 
-2. With Flags Flying
+2. [With Flags Flying](#with-flags-flying)
 
-3. And Should They Die
+3. [And Should They Die](#and-should-they-die)
 
-4. Through Yesterday's Windows
+4. [Through Yesterday's Windows](#through-yesterdays-windows)
 
-5. Destiny Takes a Hand
+5. [Destiny Takes a Hand](#destiny-takes-a-hand)
 
-6. Some Dreams Come True
+6. [Some Dreams Come True](#some-dreams-come-true)
 
-7. Prophecies Fulfilled
+7. [Prophecies Fulfilled](#prophecies-fulfilled)
 
-8. Wyoming Interlude
+8. [Wyoming Interlude](#wyoming-interlude)
 
-9. Times Hourglass
+9. [Times Hourglass](#times-hourglass)
 
 ((page x))
 
 PART FIVE - Their Beloved Children
 
-1. Christian "I" Christensen, Caroline Larsen (Christensen)
+1. [Christian "I" Christensen](#christian-i-christensen), Caroline Larsen (Christensen)
 
-2. Andrew "B" Christensen, Sarah Jane Bartholomew (Christensen)
+2. [Andrew "B" Christensen](#andrew-b-christensen), Sarah Jane Bartholomew (Christensen)
 
-3. Joseph "C" Christensen, Roxie Ellen Bartholomew (Christensen)
+3. [Joseph "C" Christensen](#joseph-c-christensen), Roxie Ellen Bartholomew (Christensen)
 
-4. Albert "H" Christensen, Ellen Virginia or "Jennie" Snow (Christensen), Myrtle Farnsworth (Christensen) -- Second Wife 
+4. [Albert "H" Christensen(#albert-h-christensen), Ellen Virginia or "Jennie" Snow (Christensen), Myrtle Farnsworth (Christensen) -- Second Wife 
 
-5. Elsie Katherine Christensen (Bartholomew), Alma "C" Bartholomew
+5. [Elsie Katherine Christensen (Bartholomew)](#elsie-kathrine-christensen-bartholomew), Alma "C" Bartholomew
 
-6. Emma Eliza Christensen (Peterson), Charles Peter Peterson
+6. [Emma Eliza Christensen (Peterson)](#emma-eliza-christensen-peterson), Charles Peter Peterson
 
-7. Louis "D" Christensen, Sarah Florence Mellor (Christensen)
+7. [Louis "D" Christensen](#louis-d-christensen), Sarah Florence Mellor (Christensen)
 
-8. Arthur Marinus Christensen, Amelia Jane Gledhill (Christensen)
+8. [Arthur Marinus Christensen](#arthur-marinus-christensen), Amelia Jane Gledhill (Christensen)
 
-9. Elvena Christensen (Clark), George Thomas Clark
+9. [Elvena Christensen (Clark)](#elvena-christensen-clark), George Thomas Clark
 
-10. Foster Children:
+10. [Foster Children](#foster-children):
 (A) Ada Lorena Madsen .
 (B) Anna Theresa Carlson .
 
@@ -16978,6 +16978,7 @@ holy light,
 Protect us by thy might, Great God our King.
 
 --Samuel F, Smith
+
 ## A CLEAR CALL
 
 Else had not accompanied her husband's
@@ -17008,7 +17009,7 @@ mailed these letters with a sincere prayer in her
 
 310
 ((page ??))
-311 A Clear Calf
+ A Clear Calf
 
 heart. It would likely take months to receive
 answers - if she ever did. Meanwhile she went
