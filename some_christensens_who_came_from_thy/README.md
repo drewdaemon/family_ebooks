@@ -79,14 +79,10 @@ Or if it is above a title, move it directly below
 <span id="page-??"></span>
 ```
 
-**Example**
-> some line  
-> \<span id="page-??"\>\</span\>
-
 ### Handle quotations
 Once in awhile an indented quote is included (for example at the first of a chapter).
 
-Annotate the quote according to markdown syntax (start with `>` to begin a quote and include line breaks with a `<br>`)
+Annotate the quote according to markdown syntax (start with `>` to begin a quote and denote line breaks with a `<br>`)
 
 ```
 > "The ladies stood in Highloft <br>
