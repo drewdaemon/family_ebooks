@@ -20,7 +20,7 @@ suming other discarded rubbish. But something
 
 In other cases, there is a hyphen that should exist but happens to land at the end of the line. If this isn't corrected, the ebook will have an extra space in it.
 
-**Example with a date range**
+**Example with an M-dash**
 > fields and peoples spread out before his very eyes--  
 > in ramparts of long-idle fortresses; settlements of
 
