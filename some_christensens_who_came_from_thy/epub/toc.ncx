@@ -715,7 +715,7 @@
     </navPoint>
     <navPoint id="num_118" playOrder="118">
       <navLabel>
-        <text>Index</text>
+        <text>Footnotes</text>
       </navLabel>
       <content src="index_split_118.html"/>
     </navPoint>
