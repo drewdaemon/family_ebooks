@@ -10,12 +10,15 @@
   display: block;
   margin: 1em 0;
 }
+
+/* h1 tags */
 .calibre2 {
   display: block;
   font-size: 1.5em;
   font-weight: bold;
   line-height: 1.2;
   margin: 0.67em 0;
+	text-align: center;
 }
 .calibre3 {
   line-height: 1.2;
@@ -41,12 +44,15 @@
   display: block;
   margin: 1em;
 }
+
+/* h2 tags */
 .calibre9 {
   display: block;
   font-size: 1.375em;
   font-weight: bold;
   line-height: 1.2;
   margin: 0.83em 0;
+	text-align: center;
 }
 .calibre10 {
   color: gray;
