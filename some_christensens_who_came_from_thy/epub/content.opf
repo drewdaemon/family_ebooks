@@ -11,7 +11,7 @@
     <meta refines="#id" property="file-as">Some Christensens Who Came From Thy</meta>
     <meta name="cover" content="cover"/>
     <meta property="calibre:timestamp" scheme="dcterms:W3CDTF">2024-04-07T21:24:52Z</meta>
-    <meta property="dcterms:modified" scheme="dcterms:W3CDTF">2024-04-23T09:26:28Z</meta>
+    <meta property="dcterms:modified" scheme="dcterms:W3CDTF">2024-04-23T10:55:48Z</meta>
     <meta refines="#id-1" property="role" scheme="marc:relators">aut</meta>
     <meta refines="#id-1" property="file-as">Unknown</meta>
     <meta name="Sigil version" content="2.1.0"/>
@@ -220,6 +220,9 @@
     <item id="id77" href="77.png" media-type="image/png"/>
     <item id="id78" href="78.png" media-type="image/png"/>
     <item id="cover" href="cover_image.jpeg" media-type="image/jpeg" properties="cover-image"/>
+    <item id="x80.png" href="80.png" media-type="image/png"/>
+    <item id="x81.png" href="81.png" media-type="image/png"/>
+    <item id="x82.png" href="82.png" media-type="image/png"/>
   </manifest>
   <spine toc="toc">
     <itemref idref="titlepage"/>
