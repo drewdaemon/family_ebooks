@@ -11,13 +11,13 @@
     <meta refines="#id" property="file-as">Some Christensens Who Came From Thy</meta>
     <meta name="cover" content="cover"/>
     <meta property="calibre:timestamp" scheme="dcterms:W3CDTF">2024-04-07T21:24:52Z</meta>
-    <meta property="dcterms:modified" scheme="dcterms:W3CDTF">2024-04-23T10:55:48Z</meta>
+    <meta property="dcterms:modified" scheme="dcterms:W3CDTF">2024-04-23T13:51:25Z</meta>
     <meta refines="#id-1" property="role" scheme="marc:relators">aut</meta>
     <meta refines="#id-1" property="file-as">Unknown</meta>
     <meta name="Sigil version" content="2.1.0"/>
   </metadata>
   <manifest>
-    <item id="titlepage" href="titlepage.xhtml" media-type="application/xhtml+xml" properties="svg calibre:title-page"/>
+    <item id="titlepage" href="titlepage.xhtml" media-type="application/xhtml+xml" properties="svg"/>
     <item id="html119" href="index_split_000.html" media-type="application/xhtml+xml"/>
     <item id="html118" href="index_split_001.html" media-type="application/xhtml+xml"/>
     <item id="html117" href="index_split_002.html" media-type="application/xhtml+xml"/>
@@ -223,6 +223,7 @@
     <item id="x80.png" href="80.png" media-type="image/png"/>
     <item id="x81.png" href="81.png" media-type="image/png"/>
     <item id="x82.png" href="82.png" media-type="image/png"/>
+    <item id="x79.png" href="79.png" media-type="image/png"/>
   </manifest>
   <spine toc="toc">
     <itemref idref="titlepage"/>
