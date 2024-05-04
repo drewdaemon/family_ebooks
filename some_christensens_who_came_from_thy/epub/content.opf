@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package version="3.0" unique-identifier="uuid_id" prefix="calibre: https://calibre-ebook.com" xmlns="http://www.idpf.org/2007/opf">
   <metadata xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata">
-    <dc:title id="id">Some Christensens Who Came From Thy</dc:title>
+    <dc:title id="id">Some Christensens Who Came from Thy</dc:title>
     <dc:creator id="id-1">Virginia Christensen Keeler</dc:creator>
     <dc:identifier>calibre:232</dc:identifier>
     <dc:identifier>uuid:dc478815-4e9f-4bc6-be06-762534331647</dc:identifier>
@@ -11,7 +11,7 @@
     <meta refines="#id" property="file-as">Some Christensens Who Came From Thy</meta>
     <meta name="cover" content="cover"/>
     <meta property="calibre:timestamp" scheme="dcterms:W3CDTF">2024-04-07T21:24:52Z</meta>
-    <meta property="dcterms:modified" scheme="dcterms:W3CDTF">2024-05-04T11:27:45Z</meta>
+    <meta property="dcterms:modified" scheme="dcterms:W3CDTF">2024-05-04T12:25:15Z</meta>
     <meta refines="#id-1" property="role" scheme="marc:relators">aut</meta>
     <meta refines="#id-1" property="file-as">Unknown</meta>
     <meta name="Sigil version" content="2.1.0"/>
@@ -226,10 +226,14 @@
     <item id="x79.jpg" href="79.jpg" media-type="image/jpeg"/>
     <item id="x15_updated.jpg" href="15_updated.jpg" media-type="image/jpeg"/>
     <item id="x16_updated.jpg" href="16_updated.jpg" media-type="image/jpeg"/>
+    <item id="Section0001.xhtml" href="Section0001.xhtml" media-type="application/xhtml+xml"/>
+    <item id="Section0002.xhtml" href="Section0002.xhtml" media-type="application/xhtml+xml"/>
   </manifest>
   <spine toc="toc">
     <itemref idref="titlepage"/>
     <itemref idref="html119"/>
+    <itemref idref="Section0001.xhtml"/>
+    <itemref idref="Section0002.xhtml"/>
     <itemref idref="html118"/>
     <itemref idref="html117"/>
     <itemref idref="html116"/>
