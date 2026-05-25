@@ -1,0 +1,6 @@
+lxml
+openai
+tiktoken
+click
+python-dotenv
+tenacity
