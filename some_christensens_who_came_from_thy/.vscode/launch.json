@@ -1,0 +1,14 @@
+{
+      "version": "0.2.0",
+      "configurations": [
+          {
+              "name": "EPUB Editor",
+              "type": "debugpy",
+              "request": "launch",
+              "module": "epub_editor.main",
+              "args": ["edit", "-f", "index_split_017.html", "epub"],
+              "cwd": "${workspaceFolder}",
+              "python": "${workspaceFolder}/.venv/bin/python"
+          }
+      ]
+  }

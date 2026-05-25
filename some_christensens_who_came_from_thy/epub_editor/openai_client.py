@@ -10,26 +10,35 @@ from openai import RateLimitError, APITimeoutError
 from .models import Chunk, Correction
 
 
-SYSTEM_PROMPT_TEMPLATE = """You are proofreading text from a digitized 1969 family history book.
-Look for OCR errors, spelling mistakes, and punctuation issues.
+SYSTEM_PROMPT_TEMPLATE = """You fix OCR scanning errors only. Nothing else.
 
 {custom_instructions}
 
-Return corrections in this JSON format:
+Return corrections as JSON:
 {{
   "corrections": [
-    {{"p": "paragraph_id", "old": "error text", "new": "corrected text", "reason": "brief explanation"}}
+    {{"old": "error text", "new": "corrected text", "reason": "brief explanation"}}
   ]
 }}
 
+OCR errors are CHARACTER-LEVEL mistakes from scanning, such as:
+- 'rn' misread as 'm' (e.g., "bom" -> "born")
+- 'cl' misread as 'd' (e.g., "doud" -> "cloud")
+- Missing or extra letters (e.g., "teh" -> "the")
+- Wrong punctuation from scanning (e.g., "U.S, A" -> "U.S.A")
+- Double spaces
+
+NOT OCR errors (do NOT fix these):
+- Word substitutions (e.g., "Thy" -> "Zion") - NEVER change one word to a different word
+- Grammar or style issues
+- Anything that requires understanding meaning or context
+- Proper nouns, place names, personal names - leave these EXACTLY as written
+
 Rules:
-- Only return actual errors, not stylistic preferences
-- "p" is the paragraph ID (shown in brackets like [filename_p001])
-- "old" must match text exactly as it appears (including capitalization)
-- Return empty array if no corrections needed: {{"corrections": []}}
-- Do not change formatting, line breaks, or spacing unless clearly wrong
-- Preserve all names, places, and dates as-is unless obviously misspelled
-- Focus on: typos, OCR errors (like 'rn' misread as 'm'), missing/extra letters"""
+- "old" must be MINIMAL (1-5 words max)
+- "old" must match text EXACTLY
+- Return empty array if no OCR errors: {{"corrections": []}}
+- When in doubt, do not suggest a correction"""
 
 
 class OpenAIEditor:
@@ -37,12 +46,15 @@ class OpenAIEditor:
 
     def __init__(
         self,
-        model: str = "gpt-5.4-nano",
+        model: str = "gpt-5.4-mini",
         api_key: Optional[str] = None,
         custom_instructions: str = ""
     ):
         self.model = model
-        self.client = OpenAI(api_key=api_key or os.getenv("OPENAI_API_KEY"))
+        self.client = OpenAI(
+            api_key=api_key or os.getenv("OPENAI_API_KEY"),
+            timeout=60.0  # 60 second timeout
+        )
         self.custom_instructions = custom_instructions
         self.system_prompt = SYSTEM_PROMPT_TEMPLATE.format(
             custom_instructions=custom_instructions
@@ -92,10 +104,17 @@ class OpenAIEditor:
         corrections = []
         for item in data.get("corrections", []):
             try:
+                old_text = item["old"]
+                new_text = item["new"]
+
+                # Skip no-op corrections where old == new
+                if old_text == new_text:
+                    continue
+
                 corrections.append(Correction(
-                    paragraph_id=item["p"],
-                    old_text=item["old"],
-                    new_text=item["new"],
+                    paragraph_id="",  # No longer used - we search all nodes
+                    old_text=old_text,
+                    new_text=new_text,
                     reason=item.get("reason", "")
                 ))
             except KeyError as e:

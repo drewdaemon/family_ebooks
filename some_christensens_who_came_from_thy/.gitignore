@@ -1,2 +1,5 @@
 book.pdf
 *.epub
+**/*.pyc
+__pycache__/
+.env

@@ -41,17 +41,17 @@ def find_node_for_correction(
     correction: Correction,
     text_nodes: list[TextNode]
 ) -> Optional[TextNode]:
-    """Find the TextNode that matches the correction's paragraph ID.
+    """Find the TextNode that contains the correction's old_text.
 
     Args:
         correction: The Correction to find a node for
         text_nodes: List of TextNodes to search
 
     Returns:
-        The matching TextNode, or None if not found
+        The first matching TextNode, or None if not found
     """
     for node in text_nodes:
-        if node.node_id == correction.paragraph_id:
+        if correction.old_text in node.extracted_text:
             return node
     return None
 
@@ -102,20 +102,12 @@ def apply_corrections_to_file(
         result.error = f"Failed to parse HTML: {e}"
         return result
 
-    # Build a lookup for quick access
-    node_lookup = {node.node_id: node for node in text_nodes}
-
     for correction in corrections:
-        node = node_lookup.get(correction.paragraph_id)
+        # Search all nodes for the old_text
+        node = find_node_for_correction(correction, text_nodes)
 
         if node is None:
-            print(f"  Warning: Node {correction.paragraph_id} not found, skipping")
-            result.corrections_skipped.append(correction)
-            continue
-
-        # Check if old_text exists in the node
-        if correction.old_text not in node.extracted_text:
-            print(f"  Warning: Text '{correction.old_text}' not found in {correction.paragraph_id}, skipping")
+            print(f"  Warning: Text '{correction.old_text}' not found in any paragraph, skipping")
             result.corrections_skipped.append(correction)
             continue
 
